@@ -1,0 +1,65 @@
+/* Heading styles */
+h1 {
+	color: #333;
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+
+/* Styles for the Todo list container */
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+/* Styles for each Todo item */
+li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+/* Styles for Todo text */
+span {
+	margin-left: 10px;
+}
+
+/* Checkbox styles */
+input[type='checkbox'] {
+	margin: 0 10px;
+}
+
+/* Button styles */
+button {
+	padding: 5px 10px;
+	margin-left: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Create Todo button specific styles */
+button:first-of-type {
+	background-color: #4caf50; /* Green */
+	color: white;
+}
+
+/* Delete button specific styles */
+button:not(:first-of-type) {
+	background-color: #f44336; /* Red */
+	color: white;
+}
+
+/* Hover effects for buttons */
+button:hover {
+	opacity: 0.8;
+}
+
+.todo-form {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0 20px 0;
+}

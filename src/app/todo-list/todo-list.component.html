@@ -1,0 +1,24 @@
+<h1>Todo List</h1>
+
+<!-- Todo form -->
+<div class="todo-form">
+  <input
+    type="text"
+    [(ngModel)]="newTodoBody"
+    placeholder="Add a new todo..."
+  />
+  <button (click)="addTodo()">Add Todo</button>
+</div>
+
+<!-- Todo list -->
+<ul>
+  <li *ngFor="let todo of todos">
+    <input
+      type="checkbox"
+      [(ngModel)]="todo.is_completed"
+      (change)="updateTodo(todo)"
+    />
+    <span>{{ todo.body }}</span>
+    <button (click)="deleteTodo(todo.id)">Delete</button>
+  </li>
+</ul>
