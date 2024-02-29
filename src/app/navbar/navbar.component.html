@@ -1,0 +1,12 @@
+<nav class="stellar-navbar">
+  <div class="brand-name">
+    <a routerLink="/">Todo List</a>
+  </div>
+  <div class="nav-links">
+    @if (authService.isLoggedIn()){
+    <button (click)="logout()">Logout</button>
+    }@else {
+    <a routerLink="/login">Login</a>
+    }
+  </div>
+</nav>
