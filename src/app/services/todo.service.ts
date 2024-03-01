@@ -30,4 +30,8 @@ export class TodoService {
   deleteTodo(id: number): Observable<Todo> {
     return this.http.delete<Todo>(`${this.url}/${id}`);
   }
+
+  getMyTodos(): Observable<Todo[]>{
+    return this.http.get<Todo[]>(`http://localhost:3000/my_todos`);
+  }
 }
